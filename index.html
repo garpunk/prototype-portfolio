@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio demo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b83c19043e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img src="images/studio_web_frog.png" alt="tree frog" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full-Stack Web Developer</p>
+          <h1>Hi, I'm <span>Garrett</span> Helms</h1>
+        </div>
+      </div>
+    </header>
+    <!--About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="image of a young man" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ex
+              veniam cupiditate fuga est optio possimus quis, dicta repudiandae
+              deleniti quam placeat doloremque voluptatibus et! Quisquam cumque
+              mollitia sit enim iusto provident sapiente. Quia nulla inventore
+              omnis voluptas quo quis, dolorem vero cumque, mollitia error
+              dignissimos fugiat odio quasi corrupti dolorum atque animi
+              eligendi? Voluptatum nemo, ex repudiandae temporibus, voluptatibus
+              architecto quam sunt voluptates labore ab nulla natus blanditiis
+              dolore ducimus illum quod repellat nostrum ullam quaerat at
+              eligendi. Quasi blanditiis soluta adipisci quisquam, illum rerum
+              assumenda sequi temporibus repellendus vero necessitatibus vel
+              placeat harum tempore laboriosam perspiciatis esse nam.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End Development</span><br />Building Web/App
+                  interfaces
+                </li>
+                <li>
+                  <span>Back-End Development</span><br />Building and
+                  maintaining Server-side code
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Coacher March 2023</span><br />Trained an AI on curated
+                  data designed towards making an AI Life Coach.
+                </li>
+                <li>
+                  <span>Freelance September 2023</span><br />Began a web
+                  development freelance service with a focus on Front-end
+                  Development.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Studio Web Full-Stack Certification</span><br />Earned
+                  certifications in HTML5, CSS3, JavaScript, Python, PHP, and
+                  MySQL. <br />
+                  View Certificates <a href="#">Here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------services---------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+              alias velit distinctio sunt ipsum dolor eius adipisci facilis
+              quidem provident.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <h2>Website Optimization</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+              alias velit distinctio sunt ipsum dolor eius adipisci facilis
+              quidem provident.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------portfolio---------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="sample work" />
+            <div class="layer">
+              <h3>Project 1 title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                aut eaque ab nulla, quia dolore nisi repellat! Consequuntur,
+                recusandae provident.
+              </p>
+              <a href="3">"icon here"</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="sample work" />
+            <div class="layer">
+              <h3>Project 2 title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                aut eaque ab nulla, quia dolore nisi repellat! Consequuntur,
+                recusandae provident.
+              </p>
+              <a href="3">"icon here"</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="sample work" />
+            <div class="layer">
+              <h3>Project 3 title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                aut eaque ab nulla, quia dolore nisi repellat! Consequuntur,
+                recusandae provident.
+              </p>
+              <a href="3">"icon here"</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!------------------contact----------------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>contact@example.com</p>
+            <p>
+              (256)458-7494
+              <!--(due to my working hours, email or text message is
+              the best way to contact me)-->
+            </p>
+            <div class="social-icons">
+              <a href="#">icon here</a>
+              <a href="#">icon</a>
+              <a href="#">icon</a>
+              <a href="#">icon</a>
+            </div>
+            <a href="#" download class="btn btn2">Download CV</a>
+            <!--add resume or cv img to href-->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------Footer---------->
+
+    <footer>
+      <p>copyright 2023 @Garrett Helms</p>
+    </footer>
+    <script src="great-stack-site.js"></script>
+  </body>
+</html>
